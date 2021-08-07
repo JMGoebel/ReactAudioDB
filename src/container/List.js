@@ -1,9 +1,18 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class List extends Component {
-  render() {
-    return <h1>I'm a List component</h1>;
-  }
-};
+// Components
+import Card from '../components/Card/Card';
+
+const List = () => {
+  const [isLoading, setLoading] = useState(true);
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <Card />
+      <Card />
+    </div>
+    
+  )
+}
 
 export default List;
